@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Página de produtos</title>
 </head>
 <body>
@@ -11,19 +12,23 @@
         <tr>
             <td>
                 <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
+                <a href="pag inicial.html"> Voltar para a pagina inicial</a>
             </td>
             <td> 
                 <form action="/buscar" method="GET">
                 <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
-                <input type="text" name="query" placeholder="Digite aqui o que você precisa">
+                <input type="text" name="query" placeholder="O que você procura?">
                 </form>
             </td>
             <td>
-                <p>Oi, <b>clique aqui</b> para acessar sua conta</p>
+                <p>Oi,faça <b>
+                    <a href="cadastro.html">login</a></b> para acessar sua conta</p>
             </td>
             <td>
                 <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
+                <a href="carrinho.html">
                 <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
+            </a>
             </td>
         </tr>
     </table>
@@ -124,9 +129,45 @@
         </table>
     </table>
    </main> 
+   <br><br><br><br><br>
+   <footer>
+    <table>
+     <title>Pagamento e Segurança</title>
+        <tr>
+            <td>
+                <div class="pagamentos">
+                    <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
+                    <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
+                    <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
+                    <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
+                    <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
+                    <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
+                    <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
+                    <br>
+                    <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
+            </div>
+            </td>
+            <td>
+            <div class="segurança">
+                <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
+                <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
+            </div>
+            </td>
+            <td>
+                       
+                <div class="redes sociais">
+                    <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
+                    <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
+                    <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
+                    <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
+                </div>
+            </td>
+        </tr>
+     </table>
+    </footer>
 </body>
 <br>
 <br>
 
-
+<img src="img\rodapé.png" alt="rodapé">
 </html>
