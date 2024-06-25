@@ -1,101 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pagina de Login</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
-                <a href="pag inicial.html"> Voltar para a pagina inicial</a>
-            </td>
-            <td>
-                <form action="/buscar" method="GET">
-                <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
-                <input type="text" name="query" placeholder="O que você procura?">
-                </form>        
-            </td>
-    
-            <td>
-                <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos" align="right">
-                <a href="carrinho.html">
-                  <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
-              </a>
-            </td>
-        </tr>
-    </table>    
-    <center>
-        <div>
-            <div>
-                <img src="img/img-01.png" width="150" height="150" alt="IMG">
-            </div>
+    <form id="cadastroForm">
+        <h1>Cadastro</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+        <button type="submit">Cadastrar</button>
+    </form>
 
-            <form>
-                <h2>Login de Usuário</h2>
-
-                <div>
-                    <input type="text" name="email" placeholder="Usuário" required >
-                </div>
-
-                <div>
-                    <input type="password" name="pass" placeholder="Senha" required>
-                </div>
-                
-                <div>
-                    <button type="submit">Entrar</button>
-                </div>
-                
-                <button> <img src="./img/google.png" width="130" height="35" alt="Login com Google"></button>
-                <br><br>
-                <div>
-                    <p>Criar uma conta</p>
-                </div>
-
-                <div>
-                    <p>Esqueceu <a href="#">Usuário / Senha?</a></p>
-                </div>
-            </form>
-        </div>
-    </center>
-    <br><br><br>
-    <footer>
-        <table>
-         <title>Pagamento e Segurança</title>
-            <tr>
-                <td>
-                    <div class="pagamentos">
-                        <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
-                        <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
-                        <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
-                        <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
-                        <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
-                        <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
-                        <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
-                        <br>
-                        <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
-                </div>
-                </td>
-                <td>
-                <div class="segurança">
-                    <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
-                    <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
-                </div>
-                </td>
-                <td>
-                           
-                    <div class="redes sociais">
-                        <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
-                        <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
-                        <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
-                        <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
-                    </div>
-                </td>
-            </tr>
-         </table>
-    </footer>
+    <script src="cadastro.js"></script>
 </body>
 </html>
