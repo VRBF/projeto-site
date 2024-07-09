@@ -2,10 +2,11 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     event.preventDefault();
 
     const nome = document.getElementById('nome').value;
+    const cadastroUsuario = document.getElementById('usuario').value;
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
-    const usuario = { nome, email, senha };
+    const usuario = { nome, cadastroUsuario, email, senha };
     localStorage.setItem('usuario', JSON.stringify(usuario));
 
     alert('Cadastro realizado com sucesso!');
