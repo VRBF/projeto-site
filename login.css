@@ -35,7 +35,7 @@ body {
     font-size: align-center;
     font-size: 15px;    
     line-height: 1.5;
-    color: #666;
+    color: black;
     display: block;
     width: 300px;
     background: #8f7ea8;
@@ -81,7 +81,7 @@ body {
 .email {
     font-size: 15px;
     line-height: 1.5;
-    color: #666;
+    color: black;
     display: block;
     width: 110px;
     background: #8f7ea8;
@@ -97,7 +97,7 @@ body {
 .senha {
     font-size: 15px;
     line-height: 1.5;
-    color: #666;
+    color: black;
     display: block;
     width: 110px;
     background: #8f7ea8;
@@ -155,3 +155,12 @@ body {
     background-color: #85169d;
 }
 
+#clique {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#entrei {
+    opacity: 0;
+    transition: all 0.3s;
+}
