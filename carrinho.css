@@ -1,0 +1,33 @@
+body{
+    background-color: #d4c9d7;}
+    
+main {
+    background-color: #D4C9D7;
+    padding: 0 30px;
+    
+     .page-title {
+        font-size: 40px;
+        padding: 50px 0;
+        text-align: center;
+        color:blueviolet 
+    
+     }
+     .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 20px;
+        color: blueviolet
+ 
+     }
+    }
+
+table {
+    width: 100%;
+        th, td {
+        padding: 10px;
+    }
+    td {
+        border-bottom: 1px solid #8f7ea8;
+    }
