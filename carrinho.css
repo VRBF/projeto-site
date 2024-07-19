@@ -1,5 +1,9 @@
 body{
     background-color: #d4c9d7;}
+
+button {
+    cursor: pointer;
+} 
     
 main {
     background-color: #D4C9D7;
@@ -22,8 +26,17 @@ main {
         color: #85169d
         
         }
- 
-     }
+     .qty {
+       
+        background-color: #d4c9d7;
+        display: inline-flex;
+        pedding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 60px;
+        border-radius: 20px;
+     }  
+     
     }
 
 table {
@@ -56,6 +69,30 @@ tbody {
         justify-content: center;
         align-items: center;
        font-size: 20px; 
+       cursor: pointer;
     }
 
+       
+    .box{
+        margin-bottom: 15px;
+        border:1px solid #ccc;
+        padding: 10px;  
+    }
+    button {
+        cursor: pointer;
+        background-color: #d4c9d7;
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }   
+{
+        background-color: #d4c9d7;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    button {
+        
+    }    
+
+    )
     
