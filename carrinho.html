@@ -6,156 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrinho de Compras</title>
   <link rel="stylesheet" href="carrinho.css">
-
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-  <table>
-    <tr>
-      <td>
-        <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
-        <a href="pag inicial.html"> Voltar para a pagina inicial</a>
-      </td>
-      <td>
-        <form action="/buscar" method="GET">
-          <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
-          <input type="text" name="query" placeholder="O que você procura?">
-        </form>
-      </td>
-      <td>
-        <p>Oi,faça <b>
-            <a href="cadastro.html">login</a></b> para acessar sua conta</p>
-      </td>
-      <td>
-        <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
-        <a href="carrinho.html">
-          <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
-        </a>
-      </td>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <td>
-
-
-        <main>
-          <div class="page-title"> Sua Sacola </div>
-          <div class="content">
-                   
-            <section>
-              <table>
-
-                <head>
-                  <tr>
-                    <th>Imagem</th>
-                    <th>Descrição</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
-                    <th>Total</th>
-                    <th>-</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                  <tr>
-                  <td><img src="./img/1.png" alt="Produto 1" width="100"></td>
-                  <td>Kit Lola Cosmetics Morte Súbita Dupla Ação</td>
-                  <td>R$ 54,90</td>
-                  <td>
-                    <div class="qty">
-                      <button>-</button>
-                      <span>1</span>
-                      <button>+</button>
-                    </div>
-                  </td>
-                  <td>R$ 54,90</td>
-                  <td>
-                    <button class="remove"><i class="bx bx-x"></i></button>
-                  </tr>
-                  <tr>
-                  <td><img src="./img/2.png" alt="Produto 2" width="100"></td>
-                  <td>Kit Oil Reflections & Refill Lively Mini (2 Produtos)</td>
-                  <td>R$ 135,90</td>
-                  <td>
-                    <div class="qty">
-                      <button>-</button>
-                      <span>1</span>
-                      <button>+</button>
-                    </div>
-                  </td>
-                  <td>R$ 135,90</td>
-                  <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                  </tr>
-                
-              </table>
-            </section>
-              <div class="Resumo da Compra"></div>
-
-              <div class="info">
-                <header>Resumo da Compra</header>
-                <div><Span>sub - total</Span></div>
-                <div><Span>Frete Gratuito</Span></div>
-                <button><span>Adicionar Cupom</span></button>
-                
-              </div>
-                
-                </footer>
-
-                <button class="pagar">
-                  <span>Finalizar pedido</span>
-                </button>
-
-
-
-
-      </td>
-    </tr>
-  </table>
-
-
-
-
-
-</body>
-<br>
-<br>
-<footer>
-  <table>
-    <title>Pagamento e Segurança</title>
-    <tr>
-      <td>
-        <div class="pagamentos">
-          <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
-          <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
-          <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
-          <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
-          <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
-          <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
-          <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
-          <br>
-          <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
-        </div>
-      </td>
-      <td>
-        <div class="segurança">
-          <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
-          <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
-        </div>
-      </td>
-      <td>
-
-        <div class="redes sociais">
-          <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
-          <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
-          <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
-          <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
-        </div>
-      </td>
-    </tr>
-  </table>
-</footer>
-
-</html>
+  
+  <header>
+    <span> Sacola de Compras </span>
+    <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
+    <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
+   
+  </header>
+  <main>
+    <div class="page-title">Sua Sacola</div>
+    <div class="content">
+      <section>       
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th>-</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>
+            <div class="product">
+            <img src="./img/1.png" alt="Produto 1" width="100"><br>
+            <div class="Info">
+            <div class= "name">Nome do Produto</div>
+            <div class="category">Categoria</div>
+          </td>
+          <td>R$</td>
+          <td>
+          <div class= "qty">
+          <button><i class="bx bx-minus"></i></button>
+          <span>2</span>
+          <button><i class="bx bx-plus"></i></button>
+          </div>
+          </td>
+          <td>R$</td>
+          <td>
+            <button class="remove" ></i><i class='bx bx-x'></i></button>
+          </td> 
+          </tr>         
+                 
+        </tbody>
+      </table>
+      </section>
+      <aside>Resumo das Compras</aside>
+    </div>
+  </main>
+  </body>
+  </html>
+  
