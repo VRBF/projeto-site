@@ -3,123 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Página inicial</title>
+    <link rel="stylesheet" href="pag inicial.css">
+    <title>Página de produtos</title>
 </head>
 <body>
-   <main>
-    <style>
-        ul{
-            list-style: none;
-            display:flex;
-            justify-content: space-around
-        }
-    </style>
-    <ul>
-        <li>
+   <header>
+        <div>
             <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
-        </li>
-        <li>
-            <form action="/buscar" method="GET">
+            <a href="pag inicial.html">Página inicial</a>
+        </div>
+        <form action="/buscar" method="GET">
             <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
             <input type="text" name="query" placeholder="O que você procura?">
-            </form>
-        </li>
-        <li>
-            <p>Oi,faça <b>
-                <a href="cadastro.html">login</a></b> para acessar sua conta</p>
-        </li>
-        <li>
+        </form>
+        <div class="account">
+            <p>Oi, faça <b><a href="cadastro.html">login</a></b> para acessar sua conta</p>
             <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
-            <a href="carrinho.html">
-                <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
-            </a>
-        </li>
-    </ul>
-        <center>
-                    <img src="./img/In-1.png" alt="Imagem inicial" width="1000"><br>
-                </center>
-                <b>
-                    <div
-                        div style="text-align: center;"
-                    </div>
-                    <p>Bem-vindo ao Group Four Cosmetics! Excelência em cuidados capilares com qualidade e resultados comprovados. Descubra clássicos e inovações no nosso novo espaço digital para uma experiência capilar extraordinária."</p>
-                </b>    
-                </p>
-            <ul>
-                <li>
-                    <a href="produtos.html">                    
-                    <img src="./img/In-2.png" alt="inicial 2" width="300">
-                    </a>
-                    <b>
-                        <div
-                        div style="text-align: center;"
-                    </div>
-                    <p>FEMININO</p>
-                    </b>
-                </li>
-                <li>
-                    <a href="produtos.html">    
-                    <img src="./img/In-3.png" alt="inicial 3" height="390" width="300">
-                    </a>
-                    <b>
-                        <div
-                        div style="text-align: center;"
-                    </div>
-                        <p>MASCULINO</p>
-                        </b>
-                </li>
-                <li>
-                    <a href="produtos.html">  
-                    <img src="./img/In-4.png" alt="inicial 4" width="300">
-                    </a>
-                    <b>
-                        <div
-                        div style="text-align: center;"
-                    </div>
-                        <p>INFANTIL</p>
-                        </b>
-                </li>
-            </ul>
-        <ul>
-            <li>
-            </li>
-        </ul>
-   </main> 
-</body>
-    <footer>
-    <table>
-     <title>Pagamento e Segurança</title>
-        <tr>
-            <td>
-                <div class="pagamentos">
-                    <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
-                    <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
-                    <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
-                    <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
-                    <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
-                    <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
-                    <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
-                    <br>
-                    <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
+            <a href="carrinho.html"><img src="./img/sacola.png" width="40" height="40" alt="Sacola"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="img/In-1.png" alt="Imagem inicial">
+        </section>
+
+        <section class="intro">
+            <p>Bem-vindo ao Group Four Cosmetics! Excelência em cuidados capilares com qualidade e resultados comprovados. Descubra clássicos e inovações no nosso novo espaço digital para uma experiência capilar extraordinária.</p>
+        </section>
+
+        <section class="categories">
+            <div class="category">
+                <img src="img/In-2.png" alt="Feminino">
+                <p>FEMININO</p>
             </div>
-            </td>
-            <td>
+            <div class="category">
+                <img src="img/In-3.png" alt="Masculino">
+                <p>MASCULINO</p>
+            </div>
+            <div class="category">
+                <img src="img/In-4.png" alt="Infantil">
+                <p>INFANTIL</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="pagamentos">
+                <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
+                <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
+                <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
+                <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
+                <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
+                <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
+                <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
+                <br>
+                <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
+            </div>
             <div class="segurança">
                 <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
                 <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
             </div>
-            </td>
-            <td>
-                       
-                <div class="redes sociais">
-                    <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
-                    <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
-                    <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
-                    <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
-                </div>
-            </td>
-        </tr>
-     </table>
-    </footer>
+            <div class="redes-sociais">
+                <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
+                <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
+                <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
+                <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
+            </div>
+        </div>
+       </footer>
+</body>
 </html>
