@@ -3,171 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
     <title>Página de produtos</title>
 </head>
 <body>
+   <header>
+        <div>
+            <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
+            <a href="pag inicial.html">Página inicial</a>
+        </div>
+        <form action="/buscar" method="GET">
+            <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
+            <input type="text" name="query" placeholder="O que você procura?">
+        </form>
+        <div class="account">
+            <p>Oi, faça <b><a href="cadastro.html">login</a></b> para acessar sua conta</p>
+            <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
+            <a href="carrinho.html"><img src="./img/sacola.png" width="40" height="40" alt="Sacola"></a>
+        </div>
+    </header>
    <main>
-    <table>
-        <tr>
-            <td>
-                <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
-                <a href="pag inicial.html"> Voltar para a pagina inicial</a>
-            </td>
-            <td> 
-                <form action="/buscar" method="GET">
-                <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
-                <input type="text" name="query" placeholder="O que você procura?">
-                </form>
-            </td>
-            <td>
-                <p>Oi,faça <b>
-                    <a href="cadastro.html">login</a></b> para acessar sua conta</p>
-            </td>
-            <td>
-                <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
-                <a href="carrinho.html">
-                <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
-            </a>
-            </td>
-        </tr>
-    </table>
-    <table>
-            <tr>
-                <td>
-                    <h1>Produtos para os cabelos</h1>
-                    <ul>
-                            <li>Kits de tratamento</li>
-                            <li>Shampoo</li>
-                            <li>Condicionador</li>
-                            <li>Tratamento para cabelos</li>
-                            <li>Leav-in e Creme para pentear</li>
-                            <li>Modelador de cabelos</li>
-                            <li>Finalizador para cabelos</li>
-                            <li>Escova progressiva</li>
-                            <li>Acessórios para cabelos</li>
-                            <li>Coloração</li>
-                    </ul>
-                        <h1>Tipos de cabelos</h1>
-                    <ul>
-                            <li>Cabelos danificados</li>
-                            <li>Cabelos cacheados ou ondulados</li>
-                            <li>Cabelos lisos</li>
-                            <li>Cabelos crespos</li>
-                            <li>Cabelos quimicamente tratados</li>
-                    </ul>
-                        <h1>Seção</h1>
-                    <ul>
-                            <li>Produtos femininos</li>
-                            <li>Produtos masculinos</li>
-                            <li>Produtos infantis</li>
-                    </ul>
-                </td>
-        <table>
-            <tr> 
-                <td>
-                    <center>
-                    <img src="./img/1.png" alt="Produto 1" width="100"><br>
-                </center>
-                    <b>LOLA FROM RIO</b><br>
-                    Kit Lola Cosmetics Morte Súbita Dupla Ação (2 Produtos)<br>
-                    R$ 54,90
-                </td>
-                <td>
-                    <img src="./img/2.png" alt="Produto 2" width="100"><br>
-                    <b>WELLA PROFESSIONALS</b><br>
-                    Kit Oil Reflections & Refill Lively Mini (2 Produtos)<br>
-                    R$ 135,90
-                </td>
-                <td>
-                    <img src="./img/3 (1).png" alt="Produto 3" width="100"><br>
-                    <b>PANTENE</b><br>
-                    Kit Pro-V Restauração Duo (2 Produtos)<br>
-                    R$ 30,71
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/4.png" alt="Produto 4" width="100"><br>
-                    <b>CLEAR</b><br>
-                    Men Cabelos & Barba Shampoo Anticaspa 200ml<br>
-                    R$ 21,99
-                </td>
-                <td>
-                    <img src="./img/5.png" alt="Produto 5" width="100"><br>
-                    <b>OUJI</b><br>
-                    Kit Homme Creme de Barbear + Creme Pós-Barba (3 Produtos)<br>
-                    R$ 158,00
-                </td>
-                <td>
-                    <img src="./img/6.png" alt="Produto 6" width="100"><br>
-                    <b>NEW OLD MAN</b><br>
-                    Kit com Necessaire<br>
-                    R$ 242,00
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/7.png" alt="Produto 7" width="100"><br>
-                    <b>EUDORA</b><br>
-                    Kit Shampoo + Condicionador (2 Produtos)<br>
-                    R$ 50,48
-                </td>
-                <td>
-                    <img src="./img/8.png" alt="Produto 8" width="100"><br>
-                    <b>SALON LINE</b><br>
-                    S.O.S Cachos Kids - Creme de Pentear 300ml<br>
-                    R$ 16,48
-                </td>
-                <td>
-                    <img src="img/9.png" alt="Produto 9" width="100"><br>
-                    <b>BIO EXTRATUS</b><br>
-                    Kit Cabelos Liso Duo (2 Produtos)<br>
-                    R$ 9,99
-                </td>
-            </tr>
-        </table>
-    </table>
-   </main> 
-   <br><br><br><br><br>
+    <aside>
+        <h1>Produtos para os cabelos</h1>
+        <ul>
+            <li>Kits de tratamento</li>
+            <li>Shampoo</li>
+            <li>Condicionador</li>
+            <li>Tratamento para cabelos</li>
+            <li>Leav-in e Creme para pentear</li>
+            <li>Modelador de cabelos</li>
+            <li>Finalizador para cabelos</li>
+            <li>Escova progressiva</li>
+            <li>Acessórios para cabelos</li>
+            <li>Coloração</li>
+        </ul>
+        <h1>Tipos de cabelos</h1>
+        <ul>
+            <li>Cabelos danificados</li>
+            <li>Cabelos cacheados ou ondulados</li>
+            <li>Cabelos lisos</li>
+            <li>Cabelos crespos</li>
+            <li>Cabelos quimicamente tratados</li>
+        </ul>
+        <h1>Seção</h1>
+        <ul>
+            <li>Produtos femininos</li>
+            <li>Produtos masculinos</li>
+            <li>Produtos infantis</li>
+        </ul>
+    </aside>
+    <section>
+        <div class="product-card">
+            <img src="./img/1.png" alt="Produto 1">
+            <b>LOLA FROM RIO</b>
+            Kit Lola Cosmetics Morte Súbita Dupla Ação (2 Produtos)<br>
+            R$ 54,90
+        </div>
+        <div class="product-card">
+            <img src="./img/2.png" alt="Produto 2">
+            <b>WELLA PROFESSIONALS</b>
+            Kit Oil Reflections & Refill Lively Mini (2 Produtos)<br>
+            R$ 135,90
+        </div>
+        <div class="product-card">
+            <img src="./img/3 (1).png" alt="Produto 3">
+            <b>PANTENE</b>
+            Kit Pro-V Restauração Duo (2 Produtos)<br>
+            R$ 30,71
+        </div>
+        <div class="product-card">
+            <img src="./img/4.png" alt="Produto 4">
+            <b>CLEAR</b>
+            Men Cabelos & Barba Shampoo Anticaspa 200ml<br>
+            R$ 21,99
+        </div>
+        <div class="product-card">
+            <img src="./img/5.png" alt="Produto 5">
+            <b>OUJI</b>
+            Kit Homme Creme de Barbear + Creme Pós-Barba (3 Produtos)<br>
+            R$ 158,00
+        </div>
+        <div class="product-card">
+            <img src="./img/6.png" alt="Produto 6">
+            <b>NEW OLD MAN</b>
+            Kit com Necessaire<br>
+            R$ 242,00
+        </div>
+        <div class="product-card">
+            <img src="./img/7.png" alt="Produto 7">
+            <b>EUDORA</b>
+            Kit Shampoo + Condicionador (2 Produtos)<br>
+            R$ 50,48
+        </div>
+        <div class="product-card">
+            <img src="./img/8.png" alt="Produto 8">
+            <b>SALON LINE</b>
+            S.O.S Cachos Kids - Creme de Pentear 300ml<br>
+            R$ 16,48
+        </div>
+        <div class="product-card">
+            <img src="img/9.png" alt="Produto 9">
+            <b>BIO EXTRATUS</b>
+            Kit Cabelos Liso Duo (2 Produtos)<br>
+            R$ 9,99
+        </div>
+    </section>
+   </main>
    <footer>
-    <table>
-     <title>Pagamento e Segurança</title>
-        <tr>
-            <td>
-                <div class="pagamentos">
-                    <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
-                    <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
-                    <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
-                    <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
-                    <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
-                    <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
-                    <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
-                    <br>
-                    <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
-            </div>
-            </td>
-            <td>
-            <div class="segurança">
-                <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
-                <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
-            </div>
-            </td>
-            <td>
-                       
-                <div class="redes sociais">
-                    <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
-                    <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
-                    <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
-                    <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
-                </div>
-            </td>
-        </tr>
-     </table>
-    </footer>
+    <div class="footer-content">
+        <div class="pagamentos">
+            <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
+            <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
+            <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
+            <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
+            <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
+            <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
+            <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
+            <br>
+            <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
+        </div>
+        <div class="segurança">
+            <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
+            <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
+        </div>
+        <div class="redes-sociais">
+            <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
+            <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
+            <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
+            <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
+        </div>
+    </div>
+    <img src="img/rodapé.png" alt="rodapé">
+   </footer>
 </body>
-<br>
-<br>
-
-<img src="img\rodapé.png" alt="rodapé">
 </html>
