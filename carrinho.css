@@ -142,6 +142,7 @@ button {
 }
 
 aside{
+    
     margin-left: 30px;
     .box {
         
@@ -150,19 +151,27 @@ aside{
         overflow: hidden;
         width: 100%;
         height: 200px;
-        color: #cbc8cf;
+        color: #330667;
+        text-align: center;
+        line-height: 2.0;
+        font-size: 16px;  
 
-        background: #866ca7;
+
+        background: #cfa9f5;
        
     
         header {
             padding: 15px 20px;	
             font-size: 18px;
-            border-bottom: 1px solid #7b50a5;
-        
+            border-bottom: 2px solid #a357ef;
+            background: #790289;
+            color: white;  
+            
+             
         
         .Info {
             padding: 20px;
+           
             
             > div {               
                 display: flex;
@@ -191,6 +200,7 @@ aside{
             justify-content: space-between;
             align-items: center;
             display: flex;
+           
             
         }
     }
