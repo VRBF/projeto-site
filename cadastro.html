@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pag inicial.css">
+    <title>Página de produtos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
+            <a href="produtos.html">Produtos</a>
+            <a href="pag inicial.html">Pagina Inicial</a>
+        </div>
+        <form action="/buscar" method="GET">
+            <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
+            <input type="text" name="query" placeholder="O que você procura?">
+        </form>
+        <div class="account">
+                <p>Oi, faça <b><a href="cadastro.html">login</a></b> para acessar sua conta</p>
+                <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
+                <a href="carrinho.html"><img src="./img/sacola.png" width="40" height="40" alt="Sacola"></a>
+            </div>
+        </header>
+
+    <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
+
     <form id="cadastroForm">
         <h1>Cadastro</h1>
         <input type="text" id="nome" name="nome" placeholder="Nome Completo" required><br>

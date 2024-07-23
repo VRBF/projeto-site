@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Página de produtos</title>
+</head>
+<body>
+   <header>
+        <div>
+            <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
+            <a href="pag inicial.html">Página inicial</a>
+        </div>
+        <form action="/buscar" method="GET">
+            <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
+            <input type="text" name="query" placeholder="O que você procura?">
+        </form>
+        <div class="account">
+            <p>Oi, faça <b><a href="cadastro.html">login</a></b> para acessar sua conta</p>
+            <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
+            <a href="carrinho.html"><img src="./img/sacola.png" width="40" height="40" alt="Sacola"></a>
+        </div>
+    </header>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +30,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  
-  <header>
-    <span> Sacola de Compras </span>
-    <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
-    <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
-   
-  </header>
+
   <main>
     <div class="page-title">Sua Sacola</div>
     <div class="content">
