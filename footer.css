@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1efe8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #85169D;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1efe8;
+    padding: 10px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #85169D;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+nav ul li ul li a {
+    color: #f1efe8;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    height: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.login-form {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h3 {
+    margin-top: 0;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #85169D;
+    color: #f1efe8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    color: #85169D;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #85169D;
+    color: #f1efe8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-methods img {
+    margin: 0 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: rotate(360deg);
+}
+
+main {
+    padding: 20px;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #85169D;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+}
+
+.chat-window {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    background-color: #85169D;
+    color: #f1efe8;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-chat {
+    cursor: pointer;
+}
+
+.chat-body {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    margin-bottom: 10px;
+}
+
+#chat-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#chat-form button {
+    padding: 5px 10px;
+    background-color: #85169D;
+    color: #f1efe8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}

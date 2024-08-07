@@ -4,33 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
-                <a href="pag inicial.html"> Voltar para a pagina inicial</a>
-            </td>
-            <td> 
-                <form action="/buscar" method="GET">
-                <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
-                <input type="text" name="query" placeholder="O que você procura?">
-                </form>
-            </td>
-            <td>
-              <p>Oi,faça <b>
-                <a href="cadastro.html">login</a></b> para acessar sua conta</p>
-            </td>
-            <td>
-                <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
-                <a href="carrinho.html">
-                  <img src="./img/sacola.png" width="40" height="40" alt="Sacola">
-              </a>
-            </td>
-        </tr>
-    </table>
+  <header>
+    <div class="logo">
+        <img src="./img/Logan.jpg" alt="Logan">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Sobre</a>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button><img src="https://img.icons8.com/ios-filled/24/f1efe8/search.png" alt="Search"></button>
+    </div>
+    <div class="icons">
+        <img src="https://img.icons8.com/ios-filled/50/f1efe8/login-rounded-right.png" alt="Login" id="login-icon">
+        <img src="https://img.icons8.com/ios-filled/50/f1efe8/shopping-bag.png" alt="Carrinho">
+        <img src="https://img.icons8.com/ios-filled/50/f1efe8/like.png" alt="Favoritos">
+    </div>
+</header>
+<div id="login-form" class="login-form">
+  <h3>Login</h3>
+  <form>
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" name="login-email" required>
+      
+      <label for="login-password">Senha:</label>
+      <input type="password" id="login-password" name="login-password" required>
+      
+      <button type="submit">Login</button>
+      <a href="#" class="create-account">Criar Cadastro</a>
+  </form>
+</div>
     <table>
             <tr>
                 <td>   
@@ -237,39 +251,46 @@
 </body>
 <br>
 <br>
-  <footer>
-    <table>
-    <title>Pagamento e Segurança</title>
-      <tr>
-          <td>
-              <div class="pagamentos">
-                  <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
-                  <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
-                  <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
-                  <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
-                  <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
-                  <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
-                  <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
-                  <br>
-                  <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
-          </div>
-          </td>
-          <td>
-          <div class="segurança">
-              <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
-              <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
-          </div>
-          </td>
-          <td>
-                     
-              <div class="redes sociais">
-                  <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
-                  <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
-                  <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
-                  <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
-              </div>
-          </td>
-      </tr>
-   </table>
-  </footer>
+<footer>
+  <div class="footer-content">
+      <div class="payment-methods">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+          <img src="https://img.icons8.com/color/48/000000/amex.png" alt="American Express">
+          <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
+      </div>
+      <div class="copyright">
+          &copy; Group Four Cosmetics 2024
+      </div>
+      <div class="social-media">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/twitter.png" alt="Twitter" class="social-icon"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/youtube-play.png" alt="YouTube" class="social-icon"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/facebook-new.png" alt="Facebook" class="social-icon"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/instagram-new.png" alt="Instagram" class="social-icon"></a>
+      </div>
+  </div>
+</footer>
+
+<!-- Chat Icon and Window -->
+<div id="chat-icon" class="chat-icon">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Chat Icon" height="25px" width="25px">
+</div>
+
+<div id="chat-window" class="chat-window">
+  <div class="chat-header">
+      <h3>Fale com um atendente</h3>
+      <span id="close-chat" class="close-chat">&times;</span>
+  </div>
+  <div class="chat-body">
+      <div class="chat-messages">
+          <!-- Chat messages will appear here -->
+      </div>
+      <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Digite sua mensagem..." required>
+          <button type="submit">Enviar</button>
+      </form>
+  </div>
+</div>
+
+   <script src="footer.js"></script>
 </html>
