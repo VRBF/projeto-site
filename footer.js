@@ -18,3 +18,10 @@ chatIcon.addEventListener("click", function() {
 closeChat.addEventListener("click", function() {
     chatWindow.style.display = "none";
 });
+
+let criarConta = document.querySelector(".create-account");
+
+criarConta.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "login.html";
+});
