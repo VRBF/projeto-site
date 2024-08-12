@@ -25,3 +25,15 @@ criarConta.addEventListener("click", function(event) {
     event.preventDefault();
     window.location.href = "login.html";
 });
+
+let logo = document.querySelector(".logo");
+
+logo.addEventListener("click", function() {
+    window.location.href = "pag inicial.html";
+});
+
+let carrinho = document.getElementById("sacola");
+
+carrinho.addEventListener("click", function() {
+    window.location.href = "carrinho.html";
+});
