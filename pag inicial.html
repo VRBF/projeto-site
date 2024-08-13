@@ -38,8 +38,22 @@
     </header>
     <main>
         <section class="hero">
-            <img src="img/In-1.png" alt="Imagem inicial">
-        </section>
+            <div id="hero-carousel" class="carousel-container">
+                <button class="carousel-button prev">←</button>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/In-1.png" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/truss.jpg" alt="Imagem 3">
+                    </div>
+                </div>
+                <button class="carousel-next">›</button>
+            </div>
+        </section>        
 
         <section class="intro">
             <p>Bem-vindo ao Group Four Cosmetics! Excelência em cuidados capilares com qualidade e resultados comprovados.</p> 
@@ -50,22 +64,22 @@
         <!-- Carrossel de Produtos em Destaque -->
         <section class="featured-products">
             <h2>Kits em Destaque</h2>
-            <div class="carousel">
+            <div id="featured-carousel" class="carousel">
                 <button class="carousel-button prev">←</button>
                 <div class="carousel-inner">
-                    <div class="carousel-item">
+                    <div class="carousel-item visible-item">
                         <img src="img/produto1.jpg" alt="Produto 1">
                         <p>Kit Elseve - Óleo Extraordinário</p>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item visible-item">
                         <img src="img/produto2.jpg" alt="Produto 2">
                         <p>Kit Hidrabel - Cabelo Liso</p>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item visible-item">
                         <img src="img/produto3.jpg" alt="Produto 3">
                         <p>Kit L'Oréal Profissional - Absolut Repair</p>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item visible-item">
                         <img src="img/produto4.jpg" alt="Produto 4">
                         <p>Kit Oceane - Cabelos Cacheados e Ondulados</p>
                     </div>
@@ -85,22 +99,21 @@
             </div>
         </section>
         <section class="categories">
-            <h2>Categorias</h2>
             <div class="category">
                 <a href="produtos.html?categoria=feminino">
-                    <img src="img/In-2.png" alt="Feminino">
+                    <img src="img/In-2.jpeg" alt="Feminino">
                     <p>Feminino</p>
                 </a>
             </div>
             <div class="category">
                 <a href="produtos.html?categoria=masculino">
-                    <img src="img/In-3.png" alt="Masculino">
+                    <img src="img/In-3.jpeg" alt="Masculino">
                     <p>Masculino</p>
                 </a>
             </div>
             <div class="category">
                 <a href="produtos.html?categoria=infantil">
-                    <img src="img/In-4.png" alt="Infantil">
+                    <img src="img/In-4.jpeg" alt="Infantil">
                     <p>Infantil</p>
                 </a>
             </div>

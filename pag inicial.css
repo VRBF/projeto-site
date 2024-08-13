@@ -1,3 +1,4 @@
+/* Reset básico para todos os elementos */
 body, h1, p, ul, li, table, td, img, a {
     margin: 0;
     padding: 0;
@@ -22,13 +23,24 @@ main {
     gap: 20px;
 }
 
-.hero img {
+/* Estilos para a seção Hero */
+.hero {
+    position: relative;
     width: 100%;
     max-width: 1200px;
-    height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilos para a seção de introdução */
 .intro {
     text-align: center;
     padding: 20px;
@@ -37,6 +49,7 @@ main {
     border-radius: 8px;
 }
 
+/* Estilos para categorias */
 .categories {
     text-align: center;
     display: flex;
@@ -48,8 +61,8 @@ main {
 }
 
 .categories h2 {
-    display: inline-block; 
-    margin-bottom: 20px; 
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .category {
@@ -75,6 +88,7 @@ main {
     font-weight: bold;
 }
 
+/* Estilos para produtos em destaque */
 .featured-products {
     text-align: center;
     max-width: 1200px;
@@ -88,72 +102,74 @@ main {
     margin-bottom: 20px;
 }
 
-.carousel {
-    display: flex;
-    align-items: center;
+/* Estilos para o carrossel principal */
+#hero-carousel {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.carousel-inner {
+#hero-carousel .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
 }
 
-.carousel-item {
-    flex: 1;
-    min-width: 300px;
+#hero-carousel .carousel-item {
+    flex: 0 0 100%; /* Mostrar 1 item por vez */
+    box-sizing: border-box;
     text-align: center;
 }
 
-.carousel-item img {
+#hero-carousel .carousel-item img {
     width: 100%;
-    max-width: 250px;
     height: auto;
     border-radius: 8px;
 }
 
+/* Estilos para o carrossel de produtos em destaque */
+#featured-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+#featured-carousel .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#featured-carousel .carousel-item {
+    flex: 0 0 25%; /* Mostrar 4 itens por vez */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#featured-carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos comuns para botões do carrossel */
 .carousel-button {
     position: absolute;
     top: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    z-index: 1;
-    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: 10px; /* Ajuste conforme necessário */
 }
 
 .carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.view-all {
-    margin-top: 20px;
-}
-
-.view-all-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.view-all-button:hover {
-    background-color: #0056b3;
+    right: 10px; /* Ajuste conforme necessário */
 }
