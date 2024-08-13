@@ -41,5 +41,5 @@ carrinho.addEventListener("click", function() {
 let home = documento.getElementById("Home");
 
 home.addEventListener("click", function() {
-    windows.location.href = "pag inicial.html";
+    window.location.href = "pag inicial.html";
 });
