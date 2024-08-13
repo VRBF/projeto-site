@@ -1,12 +1,94 @@
-.jumbotron {
-        background-color: #d7a1e3;
-        width: 100%;
-        height: 200px;
-       
-      
-}
-#jumbotronResumo {
-        background-color: #cc46ea;
-        width: 100%;
-        height: 100px;
+/* Estilo geral da página */
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    /* Estilo do container principal do carrinho */
+    #carrinho {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Título do carrinho */
+    #carrinho h2 {
+        color:#a003c0
+        margin-top: 0;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    /* Estilo de cada item no carrinho */
+    .item-carrinho {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .item-carrinho:last-child {
+        border-bottom: none;
+    }
+    
+    /* Informações do item (nome, quantidade, preço) */
+    .info-item h3 {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+    }
+    
+    .info-item p {
+        margin: 2px 0;
+        font-size: 14px;
+        color: #555;
+    }
+    
+    /* Botões de ações do item */
+    .acoes-item button {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .acoes-item button:hover {
+        background-color: #c0392b;
+    }
+    
+    /* Total do carrinho */
+    .total-carrinho {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: right;
+    }
+    
+    /* Botões de ações do carrinho */
+    .acoes-carrinho {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .acoes-carrinho button {
+        background-color: hsl(137, 70%, 53%);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 5px;
+    }
+    
+    .acoes-carrinho button:hover {
+        background-color: #a003c0;
+    }
 }   

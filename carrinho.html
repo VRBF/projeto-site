@@ -54,22 +54,98 @@
                                                         
                                           
                     <main>
-                      <div class="container">
-                      <div class="row">
-                      <div class="col-sm-4"> 
-                      <h2> Minha Sacola</h2>
-                      <div class="jumbotron">
-                        <div id="descrição"></div>
-                        <strong> <label>Quantidade:</label></strong>
-                        <input type="number">
+                        <title>Carrinho de Compras Dinâmico</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                            }
+                    
+                            #carrinho {
+                                margin-top: 20px;
+                            }
+                    
+                            .item-carrinho {
+                                border: 1px solid #ccc;
+                                padding: 10px;
+                                margin-bottom: 10px;
+                            }
+                    
+                            .acoes-item button {
+                                margin-right: 5px;
+                            }
+                    
+                            .total-carrinho {
+                                margin-top: 20px;
+                                font-weight: bold;
+                            }
+                    
+                            .acoes-carrinho {
+                                margin-top: 10px;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    
+                        <div id="carrinho">
+                            <h2>Seu Carrinho de Compras</h2>
+                            <div id="itens-carrinho">
+                                <!-- Os itens serão adicionados aqui dinamicamente -->
+                            </div>
+                    
+                            <!-- Total do carrinho -->
+                            <div class="total-carrinho">
+                                <h3>Total: R$ <span id="total-valor">0,00</span></h3>
+                            </div>
+                    
+                            <!-- Ações do carrinho -->
+                            <div class="acoes-carrinho">
+                                <button onclick="continuarComprando()">Continuar Comprando</button>
+                                <button onclick="finalizarCompra()">Finalizar Compra</button>
+                            </div>
                         </div>
-                      </div>                      
-                      <div class="col-sm-4"> 
-                        <h2> Resumo de Compra</h2>                         
-                        <div id="jumbotronResumo" class="jumbotron">
-                        </div>
-                        </div>
-                      
+                    
+                        <script>
+                            let total = 0;
+                    
+                            function adicionarAoCarrinho(nomeProduto, preco) {
+                                const itemCarrinho = document.createElement('div');
+                                itemCarrinho.className = 'item-carrinho';
+                    
+                                itemCarrinho.innerHTML = `
+                                    <div class="info-item">
+                                        <h3>${nomeProduto}</h3>
+                                        <p>Quantidade: 1</p>
+                                        <p>Preço: R$ ${preco.toFixed(2)}</p>
+                                    </div>
+                                    <div class="acoes-item">
+                                        <button onclick="removerItem(this, ${preco})">Remover</button>
+                                    </div>
+                                `;
+                    
+                                document.getElementById('itens-carrinho').appendChild(itemCarrinho);
+                    
+                                total += preco;
+                                atualizarTotal();
+                            }
+                    
+                            function removerItem(elemento, preco) {
+                                elemento.parentElement.parentElement.remove();
+                                total -= preco;
+                                atualizarTotal();
+                            }
+                    
+                            function atualizarTotal() {
+                                document.getElementById('total-valor').innerText = total.toFixed(2);
+                            }
+                    
+                            function continuarComprando() {
+                                alert('Você pode continuar comprando.');
+                            }
+                    
+                            function finalizarCompra() {
+                                alert('Compra finalizada! Total: R$ ' + total.toFixed(2));
+                            }
+                        </script>
                 </td>
             </tr>
         </table>                                
