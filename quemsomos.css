@@ -1,4 +1,4 @@
-/* Reset de estilo */
+
 body, h1, p, ul, li, img {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
 }
 
-/* Estilos da seção principal */
+
 h1 {
     text-align: center;
     margin: 40px 0 20px;
@@ -29,28 +29,28 @@ h1 {
     background-color: #ffffff;
     padding: 40px;
     margin: 20px auto;
-    max-width: 900px; /* Ajuste para a largura desejada */
+    max-width: 900px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Alinhamento do texto à esquerda */
+    text-align: left;
     font-size: 1.2rem;
     color: #555;
 }
 
 .intro p {
-    margin: 20px 0; /* Espaçamento entre parágrafos */
+    margin: 20px 0; 
     line-height: 1.8;
 }
 
 .intro .highlight {
-    color: #007bff; /* Cor para destaque */
+    color: #007bff; 
     font-weight: 600;
-    background-color: #e7f0ff; /* Fundo sutil para destacar */
+    background-color: #e7f0ff; 
     padding: 2px 4px;
     border-radius: 4px;
 }
 
-/* Estilos das cartas */
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -59,9 +59,9 @@ h1 {
     margin: 20px;
 }
 
-/* Adiciona margem ao final da última caixinha */
+
 .container .card:last-of-type {
-    margin-top: 40px; /* Ajuste este valor conforme necessário */
+    margin-top: 40px; 
 }
 
 .card {
@@ -103,8 +103,8 @@ h1 {
     font-size: 0.95rem;
 }
 
-/* Estilo para destaque dentro das cartas */
+
 .card .highlight {
-    color: #007bff; /* Cor para destaque */
+    color: #007bff; 
     font-weight: 600;
 }

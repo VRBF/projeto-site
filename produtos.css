@@ -1,4 +1,3 @@
-/* Reset básico */
 body, h1, p, ul, li, table, td, img, a {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ body {
     color: #333;
 }
 
-/* Estilos do cabeçalho */
+
 header img {
     margin-right: 10px;
 }
@@ -54,7 +53,7 @@ header .account p {
     margin-right: 20px;
 }
 
-/* Estilos do conteúdo principal */
+
 main {
     display: flex;
     padding: 20px;
@@ -108,7 +107,6 @@ main > section .product-card b {
     color: #333;
 }
 
-/* Estilos do rodapé */
 footer {
     background-color: #ffffff;
     padding: 20px;
@@ -141,22 +139,22 @@ footer .redes-sociais a {
     margin: 0 5px;
 }
 
-/* Estilos para o pop-up modal */
+
 .popup-modal {
-    display: none; /* Esconde o modal por padrão */
-    position: fixed; /* Fica fixo na tela */
-    z-index: 1000; /* Fica acima de outros elementos */
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Adiciona rolagem se necessário */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .popup-content {
     background-color: #fff;
-    margin: 10% auto; /* Centraliza o conteúdo do modal */
+    margin: 10% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%;

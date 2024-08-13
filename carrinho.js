@@ -1,4 +1,4 @@
-// Carregar o carrinho ao iniciar a página
+
 window.onload = function () {
     atualizarCarrinho();
 };
