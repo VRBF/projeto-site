@@ -1,77 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pag inicial.css">
-    <title>Página de produtos</title>
+    <link rel="stylesheet" href="pag inicial.js">
+    <link rel="stylesheet" href="footer.css">
+    <title>Página Inicial</title>
 </head>
+
 <body>
-   <header>
-        <div>
-            <img src="./img/slogan.jpg" width="100" height="100" alt="Slogan">
-            <a href="produtos.html">Produtos</a>
+    <header>
+        <div class="logo">
+            <img src="./img/Logan.jpg" alt="Logan">
         </div>
-        <form action="/buscar" method="GET">
-            <button type="submit"><img src="./img/lupa.jpeg" width="10" height="10" alt="Lupa"></button>
-            <input type="text" name="query" placeholder="O que você procura?">
-        </form>
-        <div class="account">
-            <p>Oi, faça <b><a href="cadastro.html">login</a></b> para acessar sua conta</p>
-            <img src="./img/coração-favoritos.png" width="40" height="40" alt="Coração-Favoritos">
-            <a href="carrinho.html"><img src="./img/sacola.png" width="40" height="40" alt="Sacola"></a>
+        <nav>
+            <ul>
+                <li><a href="pag inicial.html">Home</a></li>
+                <li>
+                    <a href="#">Sobre</a>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button><img src="https://img.icons8.com/ios-filled/24/f1efe8/search.png" alt="Search"></button>
+        </div>
+        <div class="icons">
+            <img src="https://img.icons8.com/ios-filled/50/f1efe8/login-rounded-right.png" alt="Login" id="login-icon">
+            <img src="https://img.icons8.com/ios-filled/50/f1efe8/shopping-bag.png" alt="Carrinho">
+            <img src="https://img.icons8.com/ios-filled/50/f1efe8/like.png" alt="Favoritos">
         </div>
     </header>
-
     <main>
         <section class="hero">
             <img src="img/In-1.png" alt="Imagem inicial">
         </section>
 
         <section class="intro">
-            <p>Bem-vindo ao Group Four Cosmetics! Excelência em cuidados capilares com qualidade e resultados comprovados. Descubra clássicos e inovações no nosso novo espaço digital para uma experiência capilar extraordinária.</p>
+            <p>Bem-vindo ao Group Four Cosmetics! Excelência em cuidados capilares com qualidade e resultados comprovados.</p> 
+            <p>Descubra clássicos e inovações no nosso novo espaço digital para uma experiência capilar extraordinária.</p>
+            <p>Explore e descubra como podemos ajudar você a se sentir ainda melhor!</p>
         </section>
 
+        <!-- Carrossel de Produtos em Destaque -->
+        <section class="featured-products">
+            <h2>Kits em Destaque</h2>
+            <div class="carousel">
+                <button class="carousel-button prev">←</button>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/produto1.jpg" alt="Produto 1">
+                        <p>Kit Elseve - Óleo Extraordinário</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/produto2.jpg" alt="Produto 2">
+                        <p>Kit Hidrabel - Cabelo Liso</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/produto3.jpg" alt="Produto 3">
+                        <p>Kit L'Oréal Profissional - Absolut Repair</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/produto4.jpg" alt="Produto 4">
+                        <p>Kit Oceane - Cabelos Cacheados e Ondulados</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/produto5.jpg" alt="Produto 5">
+                        <p>Kit Chikas - Hidrata Cabelo</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/produto6.jpg" alt="Produto 6">
+                        <p>Kit Chikas - Hidrata Cabelo</p>
+                    </div>
+                </div>
+                <button class="carousel-button next">→</button>
+            </div>
+            <div class="view-all">
+                <a href="produtos.html" class="view-all-button">Ver Todos os Produtos</a>
+            </div>
+        </section>
         <section class="categories">
+            <h2>Categorias</h2>
             <div class="category">
-                <img src="img/In-2.png" alt="Feminino">
-                <p>FEMININO</p>
+                <a href="produtos.html?categoria=feminino">
+                    <img src="img/In-2.png" alt="Feminino">
+                    <p>Feminino</p>
+                </a>
             </div>
             <div class="category">
-                <img src="img/In-3.png" alt="Masculino">
-                <p>MASCULINO</p>
+                <a href="produtos.html?categoria=masculino">
+                    <img src="img/In-3.png" alt="Masculino">
+                    <p>Masculino</p>
+                </a>
             </div>
             <div class="category">
-                <img src="img/In-4.png" alt="Infantil">
-                <p>INFANTIL</p>
+                <a href="produtos.html?categoria=infantil">
+                    <img src="img/In-4.png" alt="Infantil">
+                    <p>Infantil</p>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="pagamentos">
-                <img src="./img/1 - visa.png" alt="Visa" class="footer-pag">
-                <img src="./img/2 - mastercard.png" alt="Mastercard" class="footer-pag">
-                <img src="./img/3- amex.png" alt="Amex" class="footer-pag">
-                <img src="./img/4 - elo.png" alt="Elo" class="footer-pag">
-                <img src="./img/5 - hipercard.png" alt="Hipercard" class="footer-pag">
-                <img src="./img/6 - boleto.png" alt="Boleto" class="footer-pag">
-                <img src="./img/7 - pix.png" alt="Pix" class="footer-pag">
-                <br>
-                <span><strong>Até 10x sem juros no cartão. Confira as regras.</strong></span>
+            <div class="payment-methods">
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+                <img src="https://img.icons8.com/color/48/000000/amex.png" alt="American Express">
+                <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
             </div>
-            <div class="segurança">
-                <img src="./img/8- site seguro.png" alt="Site Seguro" class="footer-google">
-                <img src="./img/9- site google.jpeg" alt="Site Seguro by Google" class="footer-google">
+            <div class="copyright">
+                &copy; Group Four Cosmetics 2024
             </div>
-            <div class="redes-sociais">
-                <a href="#"><img src="./img/transferir (2).png" alt="Facebook" class="footer-image"></a>
-                <a href="#"><img src="./img/images.png" alt="YouTube" class="footer-image"></a>
-                <a href="#"><img src="./img/transferir.jpeg" alt="Instagram" class="footer-image"></a>
-                <a href="#"><img src="./img/transferir (3).png" alt="TikTok" class="footer-image"></a>
+            <div class="social-media">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/twitter.png" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/youtube-play.png" alt="YouTube" class="social-icon"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/facebook-new.png" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/f1efe8/instagram-new.png" alt="Instagram" class="social-icon"></a>
             </div>
         </div>
-       </footer>
+    </footer>
+
+    <!-- Chat Icon and Window -->
+    <div id="chat-icon" class="chat-icon">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Chat Icon" height="25px" width="25px">
+    </div>
+
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <h3>Fale com um atendente</h3>
+            <span id="close-chat" class="close-chat">&times;</span>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="pag inicial.js"></script>
+    <script src="footer.js"></script>
 </body>
+
 </html>
