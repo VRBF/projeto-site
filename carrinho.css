@@ -1,4 +1,4 @@
-/* Estilo geral da página */
+
 body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
@@ -6,7 +6,7 @@ body {
         padding: 20px;
     }
     
-    /* Estilo do container principal do carrinho */
+    
     #carrinho {
         background-color: #fff;
         border-radius: 8px;
@@ -16,15 +16,15 @@ body {
         margin: 0 auto;
     }
     
-    /* Título do carrinho */
+    
     #carrinho h2 {
-        color:#a003c0
+       
         margin-top: 0;
         border-bottom: 2px solid #ddd;
         padding-bottom: 10px;
     }
     
-    /* Estilo de cada item no carrinho */
+    
     .item-carrinho {
         border-bottom: 1px solid #ddd;
         padding: 10px 0;
@@ -37,7 +37,7 @@ body {
         border-bottom: none;
     }
     
-    /* Informações do item (nome, quantidade, preço) */
+    
     .info-item h3 {
         margin: 0 0 5px 0;
         font-size: 18px;
@@ -49,7 +49,7 @@ body {
         color: #555;
     }
     
-    /* Botões de ações do item */
+    
     .acoes-item button {
         background-color: #e74c3c;
         color: #fff;
@@ -64,15 +64,14 @@ body {
         background-color: #c0392b;
     }
     
-    /* Total do carrinho */
+    
     .total-carrinho {
         margin-top: 20px;
         font-size: 18px;
         text-align: right;
     }
     
-    /* Botões de ações do carrinho */
-    .acoes-carrinho {
+    
         margin-top: 20px;
         text-align: center;
     }
