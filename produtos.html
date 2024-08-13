@@ -159,21 +159,34 @@
         <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Chat Icon" height="25px" width="25px">
     </div>
 
-    <div id="chat-popup" class="chat-popup">
-        <div id="chat-header" class="chat-header">
-            <h2>Ajuda</h2>
-            <span id="close-chat">&times;</span>
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <h3>Fale com um atendente</h3>
+            <span id="close-chat" class="close-chat">&times;</span>
         </div>
-        <div id="chat-body" class="chat-body">
-            <p>Como podemos te ajudar?</p>
-            <ul>
-                <li><a href="#">Status do pedido</a></li>
-                <li><a href="#">Devoluções</a></li>
-                <li><a href="#">Suporte Técnico</a></li>
-                <li><a href="#">Dúvidas Frequentes</a></li>
-            </ul>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="submenu">
+                <p>Em que podemos te ajudar?</p>
+                <ul>
+                    <li><button>1. Problemas com sua Compra?</button></li>
+                    <li><button>2. Problemas com a Entrega?</button></li>
+                    <li><button>3. Problemas com Pagamento?</button></li>
+                    <li><button>4. Problemas com o Cadastro?</button></li>
+                    <li><button>5. Outros Assuntos</button></li>
+                    <li><button>6. Sair do Chat</button></li>
+                </ul>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." required>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
+
+
     <script src="footer.js"></script>
     <script src="produtos.js"></script>
 </body>
