@@ -1,0 +1,142 @@
+body, h1, p, ul, li, table, td, img, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+header form button:hover {
+    background: #0056b3;
+}
+
+header .account {
+    display: flex;
+    align-items: center;
+}
+
+header .account p {
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    max-width: 1200px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+}
+
+.category {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px; /* adiciona espaço entre as categorias */
+}
+
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-content div {
+    margin: 10px;
+}
+
+footer .footer-content img {
+    margin: 0 10px;
+}
+
+.footer-pag, .footer-google, .footer-image {
+    margin: 0 10px;
+    max-width: 40px; 
+    max-height: 40px;
+}
+
+footer .redes-sociais a {
+    margin: 0 5px;
+}

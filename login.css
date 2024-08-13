@@ -1,166 +1,64 @@
-.footer-image {
-    width: 30px;  
-    height: 30px;  
+
+
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
 }
 
-.footer-google {
-    width: 115px;
-    height: 35px;
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.footer-pag {
-    width: 50px;	
-    height: 25px;
-    
-}
-
-#pagamentos {
+.registration-form form {
     display: flex;
-    justify-content: center;
-    padding-left: 200px;
+    flex-direction: column;
 }
 
-body {
-    background-color: #f1efe8;
-}   
-
-#favorito {
-    padding-left: 400px;
+.registration-form label {
+    margin-bottom: 5px;
+    color: #333;
 }
 
-#busca {
-    padding-left: 450px ;}
-
-.search{    
-    font-size: align-center;
-    font-size: 15px;    
-    line-height: 1.5;
-    color: black;
-    display: block;
-    width: 300px;
-    background: #8f7ea8;
-    height: 30px;
-    border-radius: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+.registration-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
 }
 
-.search::placeholder {
-    color: black;
-}
-#login {
-    background-color: #d4c9d7;
-    width: 600px;
-    height: 500px;
-    border-radius: 50px;
-}
-
-.entrar {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #fff;
-    text-transform: uppercase;
-    width: 110px;
-    height: 30px;
-    border-radius: 25px;
-    background: #85169d;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
+.registration-form button {
+    padding: 10px;
+    background-color: #85169D;
+    color: #f1efe8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
 }
 
-.email {
-    font-size: 15px;
-    line-height: 1.5;
-    color: black;
-    display: block;
-    width: 110px;
-    background: #8f7ea8;
-    height: 30px;
-    border-radius: 25px;
-    padding: 0 30px 0 68px;
+.address-form {
+    display: none;
+    margin-top: 20px;
 }
 
-.email::placeholder {
-    color: black;
+.address-form h3 {
+    margin-bottom: 10px;
 }
 
-.senha {
-    font-size: 15px;
-    line-height: 1.5;
-    color: black;
-    display: block;
-    width: 110px;
-    background: #8f7ea8;
-    height: 30px;
-    border-radius: 25px;
-    padding: 0 30px 0 68px;
+.address-form label, 
+.address-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.senha::placeholder {
-    color: black;
-}   
-
-#container {
-    perspective: 400px; 
-    width: 200px;
-    height: 200px;
-    margin: 10px auto;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    position: relative;
-    background: #d4c9d7;
-  }
-  
-  .imagem-3d {
-    width: 200px;
-    height: 200px;
-    transition: transform 0.1s ease;
-    transform-style: preserve-3d;
-  }
-  
-  .criar-conta {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #fff;
-    text-transform: uppercase;
-    width: 110px;
-    height: 30px;
-    border-radius: 25px;
-    background: #85169d;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-  }
-  
-#Login {
-    background-color: #85169d;
-}
-
-#clique {
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-#entrei {
-    opacity: 0;
-    transition: all 0.3s;
-}

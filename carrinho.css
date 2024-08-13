@@ -1,137 +1,94 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Estilo geral da página */
 body {
-    background: #d4c9d7;
-    font-family: Arial, Helvetica, sans-serif;
-}
-button {
-    cursor: pointer;
-}
-header {
- 
-    background: #8f7ea8;
-    color: rgb(249, 243, 243);
-    font-size: 24px;
-    padding: 20px 0;
-
-    display: flex;
-    justify-content: center;
-}
-img {
-    width: 40px;
-}   
-
-main {
-    background: #eae8ea;
-    padding: 0 30px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
     
-
-    .page-title {
-        font-size:40px;
-        padding: 50px 0;;
-        color: #7b50a5;
+    /* Estilo do container principal do carrinho */
+    #carrinho {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Título do carrinho */
+    #carrinho h2 {
+        color:#a003c0
+        margin-top: 0;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    /* Estilo de cada item no carrinho */
+    .item-carrinho {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .item-carrinho:last-child {
+        border-bottom: none;
+    }
+    
+    /* Informações do item (nome, quantidade, preço) */
+    .info-item h3 {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+    }
+    
+    .info-item p {
+        margin: 2px 0;
+        font-size: 14px;
+        color: #555;
+    }
+    
+    /* Botões de ações do item */
+    .acoes-item button {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .acoes-item button:hover {
+        background-color: #c0392b;
+    }
+    
+    /* Total do carrinho */
+    .total-carrinho {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: right;
+    }
+    
+    /* Botões de ações do carrinho */
+    .acoes-carrinho {
+        margin-top: 20px;
         text-align: center;
     }
-    .content {
-        display: flex;
-        
-    section{
-        flex: 1;
-    }
-    aside {
-        background-color: #8714ec;
-        min-width: 250px;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        
-    thead{
-        tr {
-            border-bottom: 3px solid #7b50a5;
-        }
-
-        th {
-            text-align: left;
-            pedding bottom: 10px;
-            text-transform: uppercase;
-            color:#7b50a5
-        }   
-    }
-    tbody{
-        tr {
-            border-bottom: 3px solid #e4cbfd;
-            &:last-child {
-                border-bottom: 0;
-            }
-        }
-        td {
-            padding: 30px 0;
-        }
-
-    }   
-    }
-    .product {
-        display: flex;
-        align-items: center;
-      
-    }
-    img {
-        width: 100px;
-        margin-right: 10px;
-        border-radius: 6px;
-    }
-
-    .info {
-        margin-left:  60px;
-        .name {
-            font-size: 20px;
-            
-        }
-
-        .category {
-            color: #8f7ea8;
-        }
-    }
-    .qty {
-       
-        background:#cfa9f5;
-        display: inline-flex;
-        padding: 5px 5px;
-        justify-content: space-around;
-        min-width: 100px;
-        border-radius: 20px;
-       overflow:hidden;
-
-    }
-    .button {
-        background:trsasparent;      
-        border: 0;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        font-size: 20px;
-
-        &:hover {
-            background:  #cfa9f5;
-        }
-    }
-    .span {
-       margin: 0 10px;
-    }
-
-    .remove {
-    background: #cfa9f5;
-    border: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
     
-}
+    .acoes-carrinho button {
+        background-color: hsl(137, 70%, 53%);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 5px;
+    }
+    
+    .acoes-carrinho button:hover {
+        background-color: #a003c0;
+    }
+}   
