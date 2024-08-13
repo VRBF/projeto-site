@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nextButton.disabled = index >= (totalItems - itemsToShow);
         }
         
-
+        // Adicionar eventos aos botões
         prevButton.addEventListener("click", function () {
             index = Math.max(index - 1, 0);
             updateCarousel();
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
             updateCarousel();
         });
 
-        updateCarousel(); // Initialize carousel
+        updateCarousel(); // Inicializa o carrossel
     }
 
-    // Initialize both carousels
-    initializeCarousel("hero-carousel", 1); // 1 item for hero carousel
-    initializeCarousel("featured-carousel", 4); // 4 items for featured products carousel
+    // Inicializa ambos os carrosséis
+    initializeCarousel("hero-carousel", 1); // 1 item para o carrossel principal
+    initializeCarousel("featured-carousel", 4); // 4 itens para o carrossel de produtos em destaque
 });

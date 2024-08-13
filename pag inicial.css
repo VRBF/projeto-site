@@ -1,8 +1,11 @@
 /* Reset básico para todos os elementos */
-body, h1, p, ul, li, table, td, img, a {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box; /* Adicionado para melhor controle de layout */
+}
+
+body, h1, p, ul, li, table, td, img, a {
     font-size: 100%;
     vertical-align: baseline;
     list-style: none;
@@ -15,6 +18,7 @@ body {
     color: #333;
 }
 
+/* Estilos para o conteúdo principal */
 main {
     display: flex;
     flex-direction: column;
