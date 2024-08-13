@@ -37,3 +37,9 @@ let carrinho = document.getElementById("sacola");
 carrinho.addEventListener("click", function() {
     window.location.href = "carrinho.html";
 });
+
+let home = documento.getElementById("Home");
+
+home.addEventListener("click", function() {
+    windows.location.href = "pag inicial.html";
+});
