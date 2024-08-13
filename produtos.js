@@ -1,25 +1,33 @@
 // Get the modal
 var modal = document.getElementById("product-modal");
 
-// Get the image that opens the modal
-var img = document.querySelector('.product-card img[alt="Imagem do Produto 1"]');
+// Get all images that open the modal
+var imgs = document.querySelectorAll('.product-card img'); // Seleciona todas as imagens dos produtos
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.querySelector(".close-popup");
 
-// When the user clicks on the image, open the modal
-img.onclick = function() {
+// Function to open the modal
+function openModal() {
     modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// Function to close the modal
+function closeModal() {
     modal.style.display = "none";
 }
 
+// Attach click event to each image
+imgs.forEach(function(img) {
+    img.onclick = openModal;
+});
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = closeModal;
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target === modal) {
+        closeModal();
     }
 }

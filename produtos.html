@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="produtos.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="produtos.js" defer></script>
+    <script src="produtos.js"></script>
     <title>Página de Produtos</title>
 </head>
 <body>
@@ -114,16 +114,15 @@
     </section>
   </main>
 
-  <!-- Modal -->
-  <div id="product-modal" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Kit Lola Cosmetics Morte Súbita Dupla Ação (2 Produtos)</h2>
-          <p><b>Descrição:</b> O Kit Lola Cosmetics Morte Súbita Dupla Ação é um tratamento intensivo que revitaliza e dá brilho aos cabelos. Ideal para cabelos danificados.</p>
-          <p><b>Preço:</b> R$ 54,90</p>
-          <p><b>Conteúdo:</b> 1 Shampoo + 1 Condicionador</p>
-      </div>
-  </div>
+    <div id="product-modal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Kit Lola Cosmetics Morte Súbita Dupla Ação (2 Produtos)</h2>
+            <p><b>Descrição:</b> O Kit Lola Cosmetics Morte Súbita Dupla Ação é um tratamento intensivo que revitaliza e dá brilho aos cabelos. Ideal para cabelos danificados.</p>
+            <p><b>Preço:</b> R$ 54,90</p>
+            <p><b>Conteúdo:</b> 1 Shampoo + 1 Condicionador</p>
+        </div>
+    </div>
 
   <footer>
     <div class="footer-content">
@@ -165,5 +164,7 @@
           </form>
       </div>
   </div>
+  <script src="footer.js"></script>
+  <script src="produtos.js"></script>
 </body>
 </html>
