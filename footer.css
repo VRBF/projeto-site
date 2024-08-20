@@ -29,6 +29,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    z-index: 1000;
 }
 
 nav ul li {
@@ -100,6 +101,7 @@ nav ul li:hover ul {
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .login-form h3 {
