@@ -1,38 +1,54 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function initializeCarousel(carouselId, itemsToShow) {
-        const carousel = document.getElementById(carouselId);
-        const prevButton = carousel.querySelector(".carousel-button.prev");
-        const nextButton = carousel.querySelector(".carousel-button.next");
-        const carouselInner = carousel.querySelector(".carousel-inner");
-        const items = carousel.querySelectorAll(".carousel-item");
-        const totalItems = items.length;
-        let index = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const heroCarousel = document.querySelector('#hero-carousel');
+    const heroCarouselInner = heroCarousel.querySelector('.carousel-inner');
+    const heroItems = heroCarousel.querySelectorAll('.carousel-item');
+    const heroPrevButton = heroCarousel.querySelector('.carousel-button.prev');
+    const heroNextButton = heroCarousel.querySelector('.carousel-button.next');
+    let heroCurrentIndex = 0;
 
-        function updateCarousel() {
-            const itemWidth = items[0].getBoundingClientRect().width;
-            carouselInner.style.width = `${itemWidth * totalItems}px`;
-            carouselInner.style.transform = `translateX(-${index * itemWidth}px)`;
-        
-            
-            prevButton.disabled = index === 0;
-            nextButton.disabled = index >= (totalItems - itemsToShow);
-        }
-        
-      
-        prevButton.addEventListener("click", function () {
-            index = Math.max(index - 1, 0);
-            updateCarousel();
-        });
-
-        nextButton.addEventListener("click", function () {
-            index = Math.min(index + 1, totalItems - itemsToShow);
-            updateCarousel();
-        });
-
-        updateCarousel(); // Inicializa o carrossel
+    function updateHeroCarousel() {
+        heroCarouselInner.style.transform = `translateX(-${heroCurrentIndex * 100}%)`; 
     }
 
-     
-    initializeCarousel("hero-carousel", 1); // 1 item para o carrossel principal
-    initializeCarousel("featured-carousel", 4); // 4 itens para o carrossel de produtos em destaque
+    heroPrevButton.addEventListener('click', () => {
+        heroCurrentIndex = (heroCurrentIndex === 0) ? heroItems.length - 1 : heroCurrentIndex - 1;
+        updateHeroCarousel();
+    });
+
+    heroNextButton.addEventListener('click', () => {
+        heroCurrentIndex = (heroCurrentIndex === heroItems.length - 1) ? 0 : heroCurrentIndex + 1;
+        updateHeroCarousel();
+    });
+
+    setInterval(() => {
+        heroNextButton.click();
+    }, 5000); 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const featuredCarousel = document.querySelector('#featured-carousel');
+    const featuredCarouselInner = featuredCarousel.querySelector('.carousel-inner');
+    const featuredItems = featuredCarousel.querySelectorAll('.carousel-item');
+    const featuredPrevButton = featuredCarousel.querySelector('.carousel-button.prev');
+    const featuredNextButton = featuredCarousel.querySelector('.carousel-button.next');
+    let featuredCurrentIndex = 0;
+
+    const visibleItems = 4; 
+    const totalItems = featuredItems.length;
+    const maxIndex = totalItems - visibleItems; // 
+
+    function updateFeaturedCarousel() {
+        const movePercentage = (100 / visibleItems); 
+        featuredCarouselInner.style.transform = `translateX(-${featuredCurrentIndex * movePercentage}%)`;
+    }
+
+    featuredPrevButton.addEventListener('click', () => {
+        featuredCurrentIndex = (featuredCurrentIndex === 0) ? maxIndex : featuredCurrentIndex - 1;
+        updateFeaturedCarousel();
+    });
+
+    featuredNextButton.addEventListener('click', () => {
+        featuredCurrentIndex = (featuredCurrentIndex === maxIndex) ? 0 : featuredCurrentIndex + 1;
+        updateFeaturedCarousel();
+    });
 });

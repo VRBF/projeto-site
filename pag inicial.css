@@ -102,24 +102,26 @@ main {
 
 #hero-carousel {
     position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 #hero-carousel .carousel-inner {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
 }
 
 #hero-carousel .carousel-item {
     flex: 0 0 100%;
     box-sizing: border-box;
-    text-align: center;
 }
 
 #hero-carousel .carousel-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    display: block;
 }
 
 #featured-carousel {
@@ -149,22 +151,19 @@ main {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
     border: none;
+    padding: 15px;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
+    color: #fff;
     font-size: 18px;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;
+    z-index: 2;
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: 15px;
 }
 
 .carousel-button.next {
-    right: 10px;
+    right: 15px;
 }
