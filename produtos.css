@@ -194,3 +194,7 @@ footer .redes-sociais a {
 .close-popup:focus {
     color: #000;
 }
+
+.product-card .estoque_produto{
+    font-size: 12px;
+}
