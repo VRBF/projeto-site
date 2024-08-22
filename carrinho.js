@@ -64,6 +64,8 @@ function finalizarCompra() {
     limparCarrinho();
 }
 
-function continuarComprando() {
+function continuarComprando() { 
     alert('Você pode continuar comprando.');
+    window.location.href = 'produtos.html';
 }
+

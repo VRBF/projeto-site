@@ -198,3 +198,14 @@ footer .redes-sociais a {
 .product-card .estoque_produto{
     font-size: 12px;
 }
+
+#adicionar{
+    padding: 8px;
+    position: relative;
+    background-color: #85169D;
+    color: #f1efe8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
