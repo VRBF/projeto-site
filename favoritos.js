@@ -1,19 +1,33 @@
+// favoritos.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Seleciona todos os botões de remoção de favoritos
-    const removeButtons = document.querySelectorAll('.remove-favorite');
+    const favoritosContainer = document.getElementById('favoritos');
 
-    // Adiciona um evento de clique a cada botão de remoção
-    removeButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            // Seleciona o item favorito correspondente
-            const favoriteItem = this.closest('.favorite-item');
-            
-            // Remove o item da página
-            if (favoriteItem) {
-                favoriteItem.remove();
-            }
+    // Obter a lista de favoritos do localStorage
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-            // Opcional: Você pode adicionar código aqui para remover o item do armazenamento local ou da base de dados, se necessário
+    if (favorites.length === 0) {
+        favoritosContainer.innerHTML = '<p>Você ainda não tem produtos favoritos.</p>';
+    } else {
+        favorites.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.classList.add('product-card');
+
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <b>${product.name}</b>
+                <p>${product.price}</p>
+                <button onclick="removeFavorite('${product.name}')">Remover dos Favoritos</button>
+            `;
+
+            favoritosContainer.appendChild(productCard);
         });
-    });
+    }
 });
+
+// Função para remover um produto dos favoritos
+function removeFavorite(productName) {
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    favorites = favorites.filter(item => item.name !== productName);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    window.location.reload(); // Recarregar a página para atualizar a lista de favoritos
+}

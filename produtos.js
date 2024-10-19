@@ -1,32 +1,27 @@
-// Função para adicionar/remover favoritos
 function toggleFavorite(button) {
-    const productId = button.getAttribute('data-id');
-    let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+    const productCard = button.closest('.product-card');
+    const productName = productCard.querySelector('b').innerText;
+    const productPrice = productCard.querySelector('p:nth-of-type(3)').innerText; // Preço do produto
+    const productImage = productCard.querySelector('img').src; // URL da imagem do produto
 
-    if (favoritos.includes(productId)) {
-        favoritos = favoritos.filter(id => id !== productId);
-        button.textContent = '❤️'; // desfavoritar
+    // Obter a lista de favoritos do localStorage
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    // Verificar se o produto já está nos favoritos
+    const productIndex = favorites.findIndex(item => item.name === productName);
+
+    if (productIndex > -1) {
+        // Produto já está nos favoritos, removê-lo
+        favorites.splice(productIndex, 1);
+        button.innerText = '❤️'; // Coração vazio
     } else {
-        favoritos.push(productId);
-        button.textContent = '💔'; // favoritar
+        // Produto não está nos favoritos, adicioná-lo
+        favorites.push({ name: productName, price: productPrice, image: productImage });
+        button.innerText = '❤️'; // Coração preenchido
     }
 
-    localStorage.setItem('favoritos', JSON.stringify(favoritos));
-}
-
-// Atualiza o estado dos botões de favoritos
-function updateFavoriteButton() {
-    const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
-
-    document.querySelectorAll('.favorite-btn').forEach(button => {
-        const productId = button.getAttribute('data-id');
-
-        if (favoritos.includes(productId)) {
-            button.textContent = '💔'; // favoritado
-        } else {
-            button.textContent = '❤️'; // não favoritado
-        }
-    });
+    // Salvar a lista de favoritos de volta no localStorage
+    localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
 // Adiciona ao carrinho
@@ -58,7 +53,7 @@ function handleAddToCart(event) {
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.product-card').forEach(card => {
         const addButton = card.querySelector('button');
-        addButton.removeEventListener('click', handleAddToCart); // Não remover o listener anterior
+        addButton.removeEventListener('click', handleAddToCart);
         addButton.addEventListener('click', handleAddToCart);
     });
 

@@ -48,33 +48,8 @@
         </form>
     </div>
 
-    <main>
-        <section id="favoritos">
-            <h1>Seus Favoritos</h1>
-            <div class="product-card">
-                <img src="./img/1.png" alt="Imagem do Produto 1">
-                <b>LOLA FROM RIO</b>
-                <p>Kit Lola Cosmetics Morte Súbita Dupla Ação (2 Produtos)</p>
-                <p class="estoque_produto">Estoque: 50</p>
-                <p>R$ 54,90</p>
-                <div class="button-container">
-                    <button onclick="adicionarAoCarrinho('LOLA FROM RIO', 54.90)" id="adicionar">Adicionar ao Carrinho</button>
-                    <button class="remove-favorite-btn" onclick="removeFavorite(this)" data-id="1">❌</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="./img/2.png" alt="Imagem do Produto 2">
-                <b>WELLA PROFESSIONALS</b>
-                <p>Kit Oil Reflections & Refill Lively Mini (2 Produtos)</p>
-                <p class="estoque_produto">Estoque: 120</p>
-                <p>R$ 135,90</p>
-                <div class="button-container">
-                    <button onclick="adicionarAoCarrinho('WELLA PROFESSIONALS', 135.90)" id="adicionar">Adicionar ao Carrinho</button>
-                    <button class="remove-favorite-btn" onclick="removeFavorite(this)" data-id="2">❌</button>
-                </div>
-            </div>
-            <!-- Continue adicionando produtos favoritos aqui -->
-        </section>
+    <main id="favoritos">
+        <!-- Os produtos favoritos serão adicionados aqui -->
     </main>
 
     <footer>
