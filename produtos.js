@@ -12,9 +12,6 @@ function toggleFavorite(button) {
     }
 
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
-
-    // Redireciona para a página de favoritos
-    window.location.href = 'favoritos.html';
 }
 
 // Atualiza o estado dos botões de favoritos
@@ -44,17 +41,26 @@ function adicionarAoCarrinho(nomeProduto, preco) {
     }
 
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    alert(`${nomeProduto} foi adicionado ao carrinho!`);
+    console.log('Carrinho atualizado:', carrinho);
+    return(`${nomeProduto} foi adicionado ao carrinho!`);
+}
+
+// Função separada para lidar com a adição ao carrinho
+function handleAddToCart(event) {
+    const card = event.target.closest('.product-card');
+    const nomeProduto = card.querySelector('b').innerText;
+    const precoProduto = parseFloat(card.querySelector('p').innerText.split('R$')[1]);
+    const alertMessage = adicionarAoCarrinho(nomeProduto, precoProduto);
+    alert(alertMessage)
 }
 
 // Evento para adicionar produto ao carrinho
-document.querySelectorAll('.product-card').forEach(card => {
-    card.querySelector('button').addEventListener('click', () => {
-        const nomeProduto = card.querySelector('b').innerText;
-        const precoProduto = parseFloat(card.querySelector('p').innerText.split('R$')[1]);
-        adicionarAoCarrinho(nomeProduto, precoProduto);
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.product-card').forEach(card => {
+        const addButton = card.querySelector('button');
+        addButton.removeEventListener('click', handleAddToCart); // Não remover o listener anterior
+        addButton.addEventListener('click', handleAddToCart);
     });
-});
 
-// Atualiza os botões de favoritos quando a página é carregada
-document.addEventListener('DOMContentLoaded', updateFavoriteButton);
+    updateFavoriteButton();
+});

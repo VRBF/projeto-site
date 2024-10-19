@@ -38,5 +38,11 @@ carrinho.addEventListener("click", function() {
     window.location.href = "carrinho.html";
 });
 
+let Favoritos = document.getElementById("favorito");
+
+Favoritos.addEventListener("click", function() {
+    window.location.href = "favoritos.html";
+});
+
 let home = documento.getElementById("Home");
 
