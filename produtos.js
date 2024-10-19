@@ -13,11 +13,15 @@ function toggleFavorite(button) {
     if (productIndex > -1) {
         // Produto já está nos favoritos, removê-lo
         favorites.splice(productIndex, 1);
-        button.innerText = '❤️'; // Coração vazio
+        button.innerText = '♡'; // Coração vazio
+        button.title = 'Adicionar aos Favoritos';
+        alert(`${productName} foi removido dos Favoritos!`);
     } else {
         // Produto não está nos favoritos, adicioná-lo
         favorites.push({ name: productName, price: productPrice, image: productImage });
         button.innerText = '❤️'; // Coração preenchido
+        button.title = 'Remover dos Favoritos';
+        alert(`${productName} foi adicionado aos Favoritos!`);
     }
 
     // Salvar a lista de favoritos de volta no localStorage
