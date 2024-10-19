@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="produtos.css">
     <link rel="stylesheet" href="footer.css">
-    <title>Página de Produtos</title>
+    <title>Produtos</title>
 </head>
 <body>
     <header>
@@ -87,7 +87,8 @@
                 <p class="estoque_produto">Estoque: 50</p>
                 <br>R$ 54,90</p>
                 <div class="button-container">
-                <button onclick="adicionarAoCarrinho('LOLA FROM RIO', 54.90)" id="adicionar">Adicionar ao Carrinho</button>
+                    <button onclick="adicionarAoCarrinho('LOLA FROM RIO', 54.90)" id="adicionar">Adicionar ao Carrinho</button>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -99,7 +100,8 @@
                 <p class="estoque_produto">Estoque: 120</p>
                 <br>R$ 135,90</p>
                 <div class="button-container">
-                <button onclick="adicionarAoCarrinho('WELLA PROFESSIONALS', 135.90)" id="adicionar">Adicionar ao Carrinho</button>
+                 <button onclick="adicionarAoCarrinho('WELLA PROFESSIONALS', 135.90)" id="adicionar">Adicionar ao Carrinho</button>
+                 <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -112,6 +114,7 @@
                 <br>R$ 30,71</p>
                 <div class="button-container"> 
                 <button onclick="adicionarAoCarrinho('PANTENE', 30.71)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -124,6 +127,7 @@
                 <br>R$ 21,99</p>
                 <div class="button-container">
                 <button onclick="adicionarAoCarrinho('CLEAR', 21.99)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -136,6 +140,7 @@
                 <br>R$ 158,00</p>
                 <div class="button-container">
                 <button onclick="adicionarAoCarrinho('OUJI', 158.00)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -148,6 +153,7 @@
                 <br>R$ 242,00</p>
                 <div class="button-container">
                 <button onclick="adicionarAoCarrinho('NEW OLD MAN', 242.00)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -160,6 +166,7 @@
                 <br>R$ 50,48</p>
                 <div class="button-container">
                 <button onclick="adicionarAoCarrinho('EUDORA', 50.48)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -172,6 +179,7 @@
                 <br>R$ 16,48
                 <div class="button-container">
                 <button onclick="adicionarAoCarrinho('SALON LINE', 16.48)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
             <div class="product-card">
@@ -184,6 +192,7 @@
                 <br>R$ 9,99
                 <div class="button-container">
                 <button onclick="adicionarAoCarrinho('BIO EXTRATUS', 9.99)" id="adicionar">Adicionar ao Carrinho</button>
+                <button class="favorite-btn" onclick="toggleFavorite(this)" data-id="1">❤️</button>
                 </div>
             </div>
         </section>

@@ -200,7 +200,7 @@ footer .redes-sociais a {
        
 }
 
-#adicionar{
+#adicionar,#favoritos{
     
     padding: 8px;
     position: relative;
@@ -210,4 +210,24 @@ footer .redes-sociais a {
     border-radius: 5px;
     cursor: pointer;
     align-self: flex-start;
+}
+
+.favorite-btn {
+    padding: 8px;
+    position: relative;
+    background-color: #85169D;
+    color: #f1efe8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 12px;
+}
+
+.favorite-btn:hover {
+    background-color: #9A31B2;
+}
+
+.favorite-btn:focus {
+    outline: none;
 }
