@@ -1,31 +1,31 @@
 function toggleFavorite(button) {
     const productCard = button.closest('.product-card');
-    const productName = productCard.querySelector('b').innerText;
-    const productPrice = productCard.querySelector('p:nth-of-type(3)').innerText; // Preço do produto
+    const productName = productCard.querySelector('.nome_produto').innerText;
+    const productPrice = productCard.querySelector('.preço_produto').innerText; // Preço do produto
     const productImage = productCard.querySelector('img').src; // URL da imagem do produto
 
     // Obter a lista de favoritos do localStorage
-    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 
     // Verificar se o produto já está nos favoritos
-    const productIndex = favorites.findIndex(item => item.name === productName);
+    const productIndex = favoritos.findIndex(item => item.name === productName);
 
     if (productIndex > -1) {
         // Produto já está nos favoritos, removê-lo
-        favorites.splice(productIndex, 1);
+        favoritos.splice(productIndex, 1);
         button.innerText = '♡'; // Coração vazio
         button.title = 'Adicionar aos Favoritos';
         alert(`${productName} foi removido dos Favoritos!`);
     } else {
         // Produto não está nos favoritos, adicioná-lo
-        favorites.push({ name: productName, price: productPrice, image: productImage });
+        favoritos.push({ name: productName, price: productPrice, image: productImage });
         button.innerText = '❤️'; // Coração preenchido
         button.title = 'Remover dos Favoritos';
         alert(`${productName} foi adicionado aos Favoritos!`);
     }
 
     // Salvar a lista de favoritos de volta no localStorage
-    localStorage.setItem('favorites', JSON.stringify(favorites));
+    localStorage.setItem('favoritos', JSON.stringify(favoritos));
 }
 
 // Adiciona ao carrinho

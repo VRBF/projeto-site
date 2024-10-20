@@ -14,46 +14,6 @@ body {
     color: #333;
 }
 
-
-header img {
-    margin-right: 10px;
-}
-
-header form {
-    display: flex;
-    align-items: center;
-}
-
-header form input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-header form button {
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 8px 15px;
-    margin-left: 5px;
-}
-
-header form button:hover {
-    background: #0056b3;
-}
-
-header .account {
-    display: flex;
-    align-items: center;
-}
-
-header .account p {
-    margin-right: 20px;
-}
-
-
 main {
     display: flex;
     padding: 20px;
@@ -95,109 +55,34 @@ main > section .product-card {
     align-items: center;
 }
 
-main > section .product-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+.product-card img {
+    width: auto; /* Imagem ocupa toda a largura do card */
+    height: 190px; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
 }
 
-main > section .product-card b {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-footer {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer .footer-content div {
-    margin: 10px;
-}
-
-footer .footer-content img {
-    margin: 0 10px;
-}
-
-.footer-pag, .footer-google, .footer-image {
-    margin: 0 10px;
-    max-width: 40px; 
-    max-height: 40px;
-}
-
-footer .redes-sociais a {
-    margin: 0 5px;
-}
-
-
-.popup-modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.8); 
-}
-
-.popup-content {
-    background-color: #fff;
-    margin: 10% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-    text-align: center;
-}
-
-.popup-content img.popup-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.popup-content h3 {
-    color: #6a1b9a;
-    margin-bottom: 10px;
-}
-
-.popup-content p {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.close-popup {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aaa;
-    font-size: 28px;
+.product-card .marca {
     font-weight: bold;
-    cursor: pointer;
+    font-size: 1.1em; /* Tamanho da fonte da marca */
+    margin: 30px 0; /* Margem acima e abaixo */
 }
 
-.close-popup:hover,
-.close-popup:focus {
-    color: #000;
+.product-card .nome_produto {
+    font-size: 1.0em; /* Tamanho da fonte do nome do produto */
+    margin: 5px 0; /* Margem acima e abaixo */
 }
 
-.product-card .estoque_produto{
-    font-size: 12px;
-       
+.product-card .cod_produto,
+.product-card .estoque_produto,
+.product-card .preço_produto {
+    font-size: 0.9em; /* Tamanho da fonte para informações adicionais */
+    color: #555; /* Cor mais suave */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Espaço acima do container de botões */
 }
 
 #adicionar,#favoritos{
@@ -221,7 +106,12 @@ footer .redes-sociais a {
     border-radius: 5px;
     cursor: pointer;
     align-self: flex-start;
-    font-size: 12px;
+    font-size: 24px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .favorite-btn:hover {
